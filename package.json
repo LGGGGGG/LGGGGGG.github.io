@@ -1,0 +1,16 @@
+{
+  "name": "cp-notes",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "author": "Ge Lee",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.22"
+  }
+}
