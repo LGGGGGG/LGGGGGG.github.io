@@ -1,16 +1,18 @@
-import { defineConfig } from "vitepress";
+// import { defineConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   lang: "zh-CN",
   title: "Compiler Online Doc",
   description: "A VitePress Site",
   srcDir: "src",
   lastUpdated: true,
+  markdown: { math: true },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/preface/welcome" },
+      { text: "首页", link: "/index" },
       //{ text: 'Examples', link: '/markdown-examples' }
     ],
 
@@ -19,9 +21,15 @@ export default defineConfig({
         text: "前言",
         items: [
           { text: "电波系的欢迎页", link: "/preface/welcome" },
-          // { text: 'Runtime API Examples', link: '/preface/api-examples' },
-          //{ text: 'test', link: '/welcome/test' }
+          {
+            text: "泛谈编译原理",
+            link: "/preface/what-why-how",
+          },
         ],
+      },
+      {
+        text: "词法分析器",
+        items: [{ text: "如何识别一个token?", link: "/scanner/regex" }],
       },
     ],
 
