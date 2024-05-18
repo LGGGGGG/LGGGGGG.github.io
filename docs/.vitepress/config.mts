@@ -30,8 +30,99 @@ export default withMermaid({
       {
         text: "词法分析器",
         items: [
-          { text: "如何表示一个token所在集合？", link: "/scanner/regex" },
-          { text: "一个token是怎么被接受的？", link: "/scanner/auto" },
+          { text: "正则表达式", link: "/scanner/regex" },
+          { text: "自动机技术", link: "/scanner/auto" },
+          { text: "课后题答案", link: "/scanner/answer" },
+        ],
+      },
+      {
+        text: "语法分析器",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/parser/answer",
+          },
+        ],
+      },
+      {
+        text: "抽象语法树",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/AST/answer",
+          },
+        ],
+      },
+      {
+        text: "语义分析",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/semantic/answer",
+          },
+        ],
+      },
+      {
+        text: "活动记录",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/activation record/answer",
+          },
+        ],
+      },
+      {
+        text: "中间代码",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/IR/answer",
+          },
+        ],
+      },
+      {
+        text: "基本块",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/Basic Block/answer",
+          },
+        ],
+      },
+      {
+        text: "指令选择",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/instruction select/answer",
+          },
+        ],
+      },
+      {
+        text: "活性分析",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/liveness/answer",
+          },
+        ],
+      },
+      {
+        text: "寄存器分配",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/register allocation/answer",
+          },
+        ],
+      },
+      {
+        text: "垃圾回收",
+        items: [
+          {
+            text: "课后题答案",
+            link: "/GC/answer",
+          },
         ],
       },
     ],
