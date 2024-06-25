@@ -32,15 +32,15 @@ export default withMermaid({
         items: [
           { text: "正则表达式", link: "/scanner/regex" },
           { text: "自动机技术", link: "/scanner/auto" },
-          { text: "课后题答案", link: "/scanner/answer" },
+          // { text: "课后题答案", link: "/scanner/answer" },
         ],
       },
       {
         text: "语法分析器",
         items: [
           {
-            text: "课后题答案",
-            link: "/parser/answer",
+            // text: "课后题答案",
+            // link: "/parser/answer",
           },
         ],
       },
@@ -48,8 +48,8 @@ export default withMermaid({
         text: "抽象语法树",
         items: [
           {
-            text: "课后题答案",
-            link: "/AST/answer",
+            // text: "课后题答案",
+            // link: "/AST/answer",
           },
         ],
       },
@@ -57,8 +57,8 @@ export default withMermaid({
         text: "语义分析",
         items: [
           {
-            text: "课后题答案",
-            link: "/semantic/answer",
+            // text: "课后题答案",
+            // link: "/semantic/answer",
           },
         ],
       },
@@ -66,8 +66,8 @@ export default withMermaid({
         text: "活动记录",
         items: [
           {
-            text: "课后题答案",
-            link: "/activation record/answer",
+            // text: "课后题答案",
+            // link: "/activation record/answer",
           },
         ],
       },
@@ -75,8 +75,8 @@ export default withMermaid({
         text: "中间代码",
         items: [
           {
-            text: "课后题答案",
-            link: "/IR/answer",
+            // text: "课后题答案",
+            // link: "/IR/answer",
           },
         ],
       },
@@ -84,8 +84,8 @@ export default withMermaid({
         text: "基本块",
         items: [
           {
-            text: "课后题答案",
-            link: "/Basic Block/answer",
+            // text: "课后题答案",
+            // link: "/Basic Block/answer",
           },
         ],
       },
@@ -93,8 +93,8 @@ export default withMermaid({
         text: "指令选择",
         items: [
           {
-            text: "课后题答案",
-            link: "/instruction select/answer",
+            // text: "课后题答案",
+            // link: "/instruction select/answer",
           },
         ],
       },
@@ -102,8 +102,8 @@ export default withMermaid({
         text: "活性分析",
         items: [
           {
-            text: "课后题答案",
-            link: "/liveness/answer",
+            // text: "课后题答案",
+            // link: "/liveness/answer",
           },
         ],
       },
@@ -111,8 +111,8 @@ export default withMermaid({
         text: "寄存器分配",
         items: [
           {
-            text: "课后题答案",
-            link: "/register allocation/answer",
+            // text: "课后题答案",
+            // link: "/register allocation/answer",
           },
         ],
       },
@@ -120,8 +120,8 @@ export default withMermaid({
         text: "垃圾回收",
         items: [
           {
-            text: "课后题答案",
-            link: "/GC/answer",
+            // text: "课后题答案",
+            // link: "/GC/answer",
           },
         ],
       },
