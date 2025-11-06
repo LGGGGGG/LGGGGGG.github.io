@@ -18,113 +18,113 @@ export default withMermaid({
 
     sidebar: [
       {
-        text: "前言",
+        text: "games 101",
         items: [
-          { text: "电波系的欢迎页", link: "/preface/welcome" },
-          {
-            text: "泛谈编译原理",
-            link: "/preface/what-why-how",
-          },
+          { text: "作业0", link: "/cg/pa0" },
+          // {
+          //   text: "泛谈编译原理",
+          //   link: "/preface/what-why-how",
+          // },
         ],
       },
-      {
-        text: "词法分析器",
-        items: [
-          { text: "正则表达式", link: "/scanner/regex" },
-          { text: "自动机技术", link: "/scanner/auto" },
-          // { text: "课后题答案", link: "/scanner/answer" },
-        ],
-      },
-      {
-        text: "语法分析器",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/parser/answer",
-          },
-        ],
-      },
-      {
-        text: "抽象语法树",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/AST/answer",
-          },
-        ],
-      },
-      {
-        text: "语义分析",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/semantic/answer",
-          },
-        ],
-      },
-      {
-        text: "活动记录",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/activation record/answer",
-          },
-        ],
-      },
-      {
-        text: "中间代码",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/IR/answer",
-          },
-        ],
-      },
-      {
-        text: "基本块",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/Basic Block/answer",
-          },
-        ],
-      },
-      {
-        text: "指令选择",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/instruction select/answer",
-          },
-        ],
-      },
-      {
-        text: "活性分析",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/liveness/answer",
-          },
-        ],
-      },
-      {
-        text: "寄存器分配",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/register allocation/answer",
-          },
-        ],
-      },
-      {
-        text: "垃圾回收",
-        items: [
-          {
-            // text: "课后题答案",
-            // link: "/GC/answer",
-          },
-        ],
-      },
+      // {
+      //   text: "词法分析器",
+      //   items: [
+      //     { text: "正则表达式", link: "/scanner/regex" },
+      //     { text: "自动机技术", link: "/scanner/auto" },
+      //     // { text: "课后题答案", link: "/scanner/answer" },
+      //   ],
+      // },
+      // {
+      //   text: "语法分析器",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/parser/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "抽象语法树",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/AST/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "语义分析",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/semantic/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "活动记录",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/activation record/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "中间代码",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/IR/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "基本块",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/Basic Block/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "指令选择",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/instruction select/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "活性分析",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/liveness/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "寄存器分配",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/register allocation/answer",
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: "垃圾回收",
+      //   items: [
+      //     {
+      //       // text: "课后题答案",
+      //       // link: "/GC/answer",
+      //     },
+      //   ],
+      // },
     ],
 
     socialLinks: [

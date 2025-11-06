@@ -23,10 +23,10 @@
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<div style="font-family:'garamond'; font-size:60px; text-align:center; line-height:70px;">A Note of <br>Complier Construction <br> Principles and Practice</div>
+<div style="font-family:'garamond'; font-size:60px; text-align:center; line-height:70px;">个人网站，希望能把你捕获~</div>
 
 ---
 
-<div style="font-family:'Monotype Corsiva'; font-size:40px; text-align:center; line-height:40px;">This book is the<br>property of<br>The Mr. Know-it-all</div>
+<div style="font-family:'Monotype Corsiva'; font-size:40px; text-align:center; line-height:40px;">This website is the<br>property of<br>The Mr. Know-it-all</div>
 
 ![](/cover.png)

@@ -60,4 +60,4 @@
 
 ## 致谢
 
-感谢 [@Sec-ant](https://github.com/Sec-ant/)前辈对本书前端构建大力支持
+感谢 [@Sec-ant](https://github.com/Sec-ant/)前辈对前端构建大力支持
