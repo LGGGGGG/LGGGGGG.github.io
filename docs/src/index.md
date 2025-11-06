@@ -23,7 +23,7 @@
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<div style="font-family:'garamond'; font-size:60px; text-align:center; line-height:70px;">个人网站，希望能把你捕获~</div>
+<div style="font-family:'garamond'; font-size:50px; text-align:center; line-height:70px;">个人网站，希望能把你捕获~</div>
 
 ---
 

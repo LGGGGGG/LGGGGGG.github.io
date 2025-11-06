@@ -4,7 +4,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
   lang: "zh-CN",
-  title: "Compiler Online Doc",
+  title: "哥们做的东西，喜欢您来",
   description: "A VitePress Site",
   srcDir: "src",
   lastUpdated: true,
