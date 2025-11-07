@@ -27,7 +27,7 @@
 
 线性变换武断一点就是可以写成一个可逆矩阵的变换。
 
-伟大的三黄一棕告诉我们，线性变换与矩阵一一对应，可以通过对基向量$x = (1, 0), y = (0, 1)$重定位算出，注意我们默认向量是竖着的，这里横着写只是为了好写，且变换矩阵默认左乘。
+伟大的三蓝一棕告诉我们，线性变换与矩阵一一对应，可以通过对基向量$x = (1, 0), y = (0, 1)$重定位算出，注意我们默认向量是竖着的，这里横着写只是为了好写，且变换矩阵默认左乘。
 
 比如：
 
@@ -39,30 +39,30 @@
   0&s_y
   \end{bmatrix}
   $$
-  - 反射矩阵
-    $$x \to x^{'} = (1, 0) \to (-1, 0), y \to y^{'} = (0, 1) \to (0, 1)$$
-    $$
-    RFL = \begin{bmatrix}
-    -1&0 \\
-    0&1
-    \end{bmatrix}
-    $$
-  - 切变矩阵
-    $$x \to x^{'} = (1, 0) \to (1, 0), y \to y^{'} = (0, 1) \to (a, 1)$$
-    $$
-    SHR(a) = \begin{bmatrix}
-    1&a \\
-    0&1
-    \end{bmatrix}
-    $$
-  - 旋转矩阵
-    $$x \to x^{'} = (1, 0) \to (\cos \theta, \sin \theta), y \to y^{'} = (0, 1) \to (-\sin \theta, \cos \theta)$$
-    $$
-    R(\theta) = \begin{bmatrix}
-    \cos \theta&-\sin \theta \\
-    \sin \theta&\cos \theta
-    \end{bmatrix}
-    $$
+- 反射矩阵
+  $$x \to x^{'} = (1, 0) \to (-1, 0), y \to y^{'} = (0, 1) \to (0, 1)$$
+  $$
+  RFL = \begin{bmatrix}
+  -1&0 \\
+  0&1
+  \end{bmatrix}
+  $$
+- 切变矩阵
+  $$x \to x^{'} = (1, 0) \to (1, 0), y \to y^{'} = (0, 1) \to (a, 1)$$
+  $$
+  SHR(a) = \begin{bmatrix}
+  1&a \\
+  0&1
+  \end{bmatrix}
+  $$
+- 旋转矩阵
+  $$x \to x^{'} = (1, 0) \to (\cos \theta, \sin \theta), y \to y^{'} = (0, 1) \to (-\sin \theta, \cos \theta)$$
+  $$
+  R(\theta) = \begin{bmatrix}
+  \cos \theta&-\sin \theta \\
+  \sin \theta&\cos \theta
+  \end{bmatrix}
+  $$
 
 ## 非线性变换
 
@@ -114,39 +114,38 @@ $$
   \end{pmatrix}
   $$
 
-  那么，之前定义的重要变换矩阵$T，R，S$
-  可以表示为：
+那么，之前定义的重要变换矩阵$T，R，S$
+可以表示为：
 
-  $$
-  T(t_x,t_y)=  \begin{bmatrix}
-    1&0 &t_x\\
-    0&1 &t_y\\
-    0&0&1
-    \end{bmatrix}
-  $$
-
-  $$
-  R(\theta) = \begin{bmatrix}
-  \cos \theta &-\sin \theta &0\\
-  \sin \theta&\cos \theta &0\\
+$$
+T(t_x,t_y)=  \begin{bmatrix}
+  1&0 &t_x\\
+  0&1 &t_y\\
   0&0&1
   \end{bmatrix}
-  $$
+$$
 
-  $$
-    S(s_x, s_y) = \begin{bmatrix}
-    s_x&0 &0\\
-    0&s_y&0\\
-    0&0&1
-    \end{bmatrix}
+$$
+R(\theta) = \begin{bmatrix}
+\cos \theta &-\sin \theta &0\\
+\sin \theta&\cos \theta &0\\
+0&0&1
+\end{bmatrix}
+$$
+
+$$
+  S(s_x, s_y) = \begin{bmatrix}
+  s_x&0 &0\\
+  0&s_y&0\\
+  0&0&1
+  \end{bmatrix}
 
 
-  $$
+$$
 
-  注意，与上面的仿射变换一致，这样的矩阵代表的都是先线性变换再平移。容易证明，这样的矩阵一定可逆。因此，所有变换的最终结果等于是对应矩阵之积对应的变换。
+注意，与上面的仿射变换一致，这样的矩阵代表的都是先线性变换再平移。容易证明，这样的矩阵一定可逆。因此，所有变换的最终结果等于是对应矩阵之积对应的变换。
 
-  由于矩阵运算不全满足交换性质，这代表并非所有变换都可以交换(对角矩阵是可交换的，意味着放缩、镜像变换可交换；二维旋转矩阵可交换，旋转变换也是可交换的)，因此矩阵顺序很重要。
-  $$
+由于矩阵运算不全满足交换性质，这代表并非所有变换都可以交换(对角矩阵是可交换的，意味着放缩、镜像变换可交换；二维旋转矩阵可交换，旋转变换也是可交换的)，因此矩阵顺序很重要。
 
 绕某点$C(x,y)$旋转的例子：
 先平移回原点，再旋转，再平移回$C$:
@@ -160,7 +159,8 @@ $$T(x,y)R(\theta)T(-x,-y)$$
 $T(1,2)R(\frac{\pi}{4})P$
 然后就是无聊的填数游戏。
 
-核心代码
+## 核心代码
+
 ::: details
 
 ```c++
@@ -179,3 +179,6 @@ $T(1,2)R(\frac{\pi}{4})P$
 ```
 
 :::
+
+$$
+$$

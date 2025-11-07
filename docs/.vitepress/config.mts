@@ -21,6 +21,7 @@ export default withMermaid({
         text: "games 101",
         items: [
           { text: "作业0", link: "/cg/pa0" },
+          { text: "作业1", link: "/cg/pa1" },
           // {
           //   text: "泛谈编译原理",
           //   link: "/preface/what-why-how",
