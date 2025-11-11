@@ -286,11 +286,11 @@ $$
 - $r = t \cdot aspect$
 - $l = -r$
 
-# 作业
+## 作业
 
 构造$M,P$两个矩阵，本科图形学课这都是封装好了，现在写写也好。
 
-## 核心代码
+### 核心代码
 
 想起来 eigen 的坑了，还是 QT 舒服。
 
@@ -317,9 +317,9 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
 {
     // Students will implement this function
 
-    Eigen::Matrix4f projection = Eigen::Matrix4f::Identity();
-    float n = -zNear,
-          f = -zFar,
+   Eigen::Matrix4f projection = Eigen::Matrix4f::Identity();
+    float n = zNear,
+          f = zFar,
           t = std::abs(n) * std::tan(ANGLE_TO_RADIAN(eye_fov / 2)),
           b = -t,
           r = t * aspect_ratio,
@@ -328,17 +328,14 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
     projection(0, 3) = -(r + l) / (r - l);
     projection(1, 1) = 2 / (t - b);
     projection(1, 3) = -(t + b) / (t - b);
-    projection(2, 2) = 2 / (n - f);
-    projection(2, 3) = -(n + f) / (n - f);
+    projection(2, 2) = 2 / (f - n);
+    projection(2, 3) = -(n + f) / (f - n);
 
     Eigen::Matrix4f M;
     M << n, 0, 0, 0,
         0, n, 0, 0,
         0, 0, n + f, -n * f,
         0, 0, 1, 0;
-
-
-
     return projection * M;
 }
 Eigen::Matrix4f get_rotation(Vector3f axis, float angle)
