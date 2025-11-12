@@ -150,7 +150,7 @@ $$b_0^i(t) = \sum ^i_{j = 0}b_jC_i^jt^j(1-t)^{i-j}$$
 感觉不如 B 样条......难度
 ::: details
 
-````c++
+```c++
 cv::Point2f recursive_bezier(const std::vector<cv::Point2f> &control_points, float t)
 {
     // TODO: Implement de Casteljau's algorithm
@@ -176,7 +176,9 @@ void bezier(const std::vector<cv::Point2f> &control_points, cv::Mat &window)
     }
 }
 ```
+
 反走样
+
 ```c++
 void bezier_antialiasing(const std::vector<cv::Point2f> &control_points, cv::Mat &window)
 {
@@ -217,4 +219,7 @@ void bezier_antialiasing(const std::vector<cv::Point2f> &control_points, cv::Mat
 ```
 
 :::
-````
+
+```
+
+```
