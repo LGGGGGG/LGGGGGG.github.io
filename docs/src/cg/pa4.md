@@ -150,8 +150,70 @@ $$b_0^i(t) = \sum ^i_{j = 0}b_jC_i^jt^j(1-t)^{i-j}$$
 感觉不如 B 样条......难度
 ::: details
 
-```c++
+````c++
+cv::Point2f recursive_bezier(const std::vector<cv::Point2f> &control_points, float t)
+{
+    // TODO: Implement de Casteljau's algorithm
+    int n = control_points.size();
+    if (n == 1)
+        return control_points[0];
+    std::vector<cv::Point2f> new_control_points(n - 1);
+    for (int i = 0; i < n - 1; ++i)
+        new_control_points[i] = t * control_points[i] + (1 - t) * control_points[i + 1];
 
+    return recursive_bezier(new_control_points, t);
+}
+
+void bezier(const std::vector<cv::Point2f> &control_points, cv::Mat &window)
+{
+    // TODO: Iterate through all t = 0 to t = 1 with small steps, and call de Casteljau's
+    // recursive Bezier algorithm.
+    for (double t = 0.0; t <= 1.0; t += 0.001)
+    {
+        cv::Point2f point = recursive_bezier(control_points, t);
+
+        window.at<cv::Vec3b>(point.y, point.x)[1] = 255;
+    }
+}
 ```
+反走样
+```c++
+void bezier_antialiasing(const std::vector<cv::Point2f> &control_points, cv::Mat &window)
+{
+    // TODO: Iterate through all t = 0 to t = 1 with small steps, and call de Casteljau's
+    // recursive Bezier algorithm.
+    for (double t = 0.0; t <= 1.0; t += 0.001)
+    {
+        cv::Point2f point = recursive_bezier(control_points, t);
+
+        float x = point.x;
+        float y = point.y;
+        float u = x - (int)x + 0.5;
+        float v = y - (int)y + 0.5;
+        if (u > 1)
+        {
+            u = u - 1;
+        }
+        if (v > 1)
+        {
+            v = v - 1;
+        }
+
+        float d00 = pow(u, 2) + pow(v, 2);
+        float d01 = pow(1 - u, 2) + pow(v, 2);
+        float d10 = pow(u, 2) + pow(1 - v, 2);
+        float d11 = pow(1 - u, 2) + pow(1 - v, 2);
+
+        window.at<cv::Vec3b>(y, x)[1] =
+            fmin(255, window.at<cv::Vec3b>(y, x)[1] + 255 * (1 - sqrt(d00 / 2)));
+        window.at<cv::Vec3b>(y, x + 1)[1] =
+            fmin(255, window.at<cv::Vec3b>(y, x + 1)[1] + 255.0 * (1 - sqrt(d01 / 2)));
+        window.at<cv::Vec3b>(y + 1, x)[1] =
+            fmin(255, window.at<cv::Vec3b>(y + 1, x)[1] + 255.0 * (1 - sqrt(d10 / 2)));
+        window.at<cv::Vec3b>(y + 1, x + 1)[1] =
+            fmin(255, window.at<cv::Vec3b>(y + 1, x + 1)[1] + 255.0 * 1 - sqrt(d11 / 2));
+    }
+}
+````
 
 :::
