@@ -364,8 +364,8 @@ Eigen::Vector3f texture_fragment_shader(const fragment_shader_payload &payload)
     Eigen::Vector3f kd = texture_color / 255.f;
     Eigen::Vector3f ks = Eigen::Vector3f(0.7937, 0.7937, 0.7937);
 
-    auto l1 = light{{20, 20, 20}, {500, 500, 500}};
-    auto l2 = light{{-20, 20, 0}, {500, 500, 500}};
+    auto l1 = light{ {20, 20, 20}, {500, 500, 500}};
+    auto l2 = light{ {-20, 20, 0}, {500, 500, 500}};
 
     std::vector<light> lights = {l1, l2};
     Eigen::Vector3f amb_light_intensity{10, 10, 10};
