@@ -214,6 +214,7 @@ void bezier_antialiasing(const std::vector<cv::Point2f> &control_points, cv::Mat
             fmin(255, window.at<cv::Vec3b>(y + 1, x + 1)[1] + 255.0 * 1 - sqrt(d11 / 2));
     }
 }
-````
+```
 
 :::
+````

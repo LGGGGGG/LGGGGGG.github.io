@@ -145,7 +145,7 @@ static bool insideTriangle(float x, float y, const Vector3f* _v)
 本文实现的是 MSAA，代码量又少，跑得又快，不知道 SSAA 存在的意义是啥。
 
 ```c++
-static constexpr int dir[4][2] = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+static constexpr int dir[4][2] = { {0, 0}, {0, 1}, {1, 0}, {1, 1}};
 void rst::rasterizer::rasterize_triangle(const Triangle& t) {
     auto v = t.toVector4();
 
