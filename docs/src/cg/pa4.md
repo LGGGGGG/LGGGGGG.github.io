@@ -219,7 +219,3 @@ void bezier_antialiasing(const std::vector<cv::Point2f> &control_points, cv::Mat
 ```
 
 :::
-
-```
-
-```

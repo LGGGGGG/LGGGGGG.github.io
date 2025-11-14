@@ -96,7 +96,7 @@ $$f(v) = 0$$
 $$(P-P^{'})N= (O + tD-P^{'})N = 0$$
 
 $$
-t = \frac{(P^{'}-O)N}{DN}
+t = \frac{(P^{'}-O)}{D}
 $$
 
 判定$t$是否是正实数。
@@ -167,6 +167,11 @@ void Renderer::Render(const Scene &scene)
     }
 
 }
+```
+
+逐条翻译
+
+```c++
 bool rayTriangleIntersect(const Vector3f &v0, const Vector3f &v1, const Vector3f &v2, const Vector3f &orig,
                           const Vector3f &dir, float &tnear, float &u, float &v)
 {
