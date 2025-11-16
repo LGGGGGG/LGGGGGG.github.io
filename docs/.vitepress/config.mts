@@ -29,6 +29,7 @@ export default withMermaid({
           { text: "作业5", link: "/cg/pa5" },
           { text: "作业6", link: "/cg/pa6" },
           { text: "作业7", link: "/cg/pa7" },
+          { text: "作业8", link: "/cg/pa8" },
           // {
           //   text: "泛谈编译原理",
           //   link: "/preface/what-why-how",
