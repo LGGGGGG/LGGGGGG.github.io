@@ -18,6 +18,11 @@ export default withMermaid({
 
     sidebar: [
       {
+        text: "cs144",
+        collapsed: true,
+        items: [{ text: "实验回顾", link: "/network/overall" }],
+      },
+      {
         text: "games 101",
         collapsed: true,
         items: [
@@ -37,6 +42,7 @@ export default withMermaid({
           // },
         ],
       },
+
       // {
       //   text: "词法分析器",
       //   items: [
