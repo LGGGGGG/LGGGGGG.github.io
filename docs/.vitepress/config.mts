@@ -42,6 +42,11 @@ export default withMermaid({
           // },
         ],
       },
+      {
+        text: "前端杂技",
+        collapsed: true,
+        items: [{ text: "react杂项", link: "/front-end/react" }],
+      },
 
       // {
       //   text: "词法分析器",
